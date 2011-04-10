@@ -5,6 +5,7 @@
       (zero? (rem n 5))))
 
 (def integers (iterate inc 1))
-(apply + (filter multiple-3-5? (take 999 integers)))
+
+(println (apply + (filter multiple-3-5? (take 999 integers))))
 
 ;(apply + (filter multiple-3-5? (range 1 1000)))
